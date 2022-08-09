@@ -1,12 +1,12 @@
 import TopNav from '../components/topnav.tsx'
-
+import { VStack, Box } from '@chakra-ui/react'
 export default function Layout({ children }) {
   return (
-    <>
+    <VStack>
       <TopNav/>
-      <main className="mx-auto max-w-screen-lg px-3 py-6">
+      <Box as="main">
         {children}
-      </main>
-    </>
+      </Box>
+    </VStack>
   )
 }
