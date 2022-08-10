@@ -3,57 +3,40 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Layout from '../components/layout'
 import styles from '../styles/Home.module.css'
+import { VStack, Box, Heading, Link, Icon } from '@chakra-ui/react'
+import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <section>
-      <Header text={"Michal Sapka"}/>
+      <VStack spacing="24px"align="stretch">
+      <Box as="section">
+      <Heading>Michal Sapka</Heading>
       Self-though senior software engineer from Poland.
-      </section>
+      </Box>
 
-      <section>
-      <Header text={"About me"}/>
-      <Text>
-        I am a self-thoght software engineer working with at <LinkOut text={"Zendesk Cracow"} url={"https://zendesk.com"}/>. Even though I&apos;ve sterted my professional programig life relatively late in life, I&apos;ve been passionate with computers since being 10 years old.  I love the process of creating software. Even though understanding the product is a requisite, I am strongly driven by the technical side. I take pride at what and how I do things. I have biggest experience working with Ruby on Rails and relative datababases, but I am expanding my knowlege around service oriented architecture, no-sql databases and other languages - currently I am trying to get a hang of Golang, MongoDB. I am also trying to get familiar with modern ReactJS ecosystem.
-      </Text>
-      </section>
+      <Box as="section">
+      <Heading as="h3">About me</Heading>
+        I am a self-thoght software engineer working with at <Link href="https://zendesk.com">Zendesk</Link>. Even though I&apos;ve sterted my professional programig life relatively late in life, I&apos;ve been passionate with computers since being 10 years old.  I love the process of creating software. Even though understanding the product is a requisite, I am strongly driven by the technical side. I take pride at what and how I do things. I have biggest experience working with Ruby on Rails and relative datababases, but I am expanding my knowlege around service oriented architecture, no-sql databases and other languages - currently I am trying to get a hang of Golang, MongoDB. I am also trying to get familiar with modern ReactJS ecosystem.
+      </Box>
       
-      <section>
-      <Header text={"I enjoy"}/>
+      <Box as="section">
+      <Heading as="h3">I enjoy</Heading>
       Non-action movies, anime and manga, classic PC games (with huge love for adventure ganre), literature, jazz.
-      </section>
-      <section>
-      <Header text={"Recent publications"}/>
+      </Box>
+      <Box as="section">
+      <Heading as="h3">Recent publications</Heading>
       ...
-      </section>
+      </Box>
 
-      <section>
-      <Header text={"On the web"}/>
-         <LinkOut text="Github" url="https://github.com/michalsapka"/>
-         <LinkOut text="Medium" url="https://medium.com/@msapka"/>
-      </section>
+      <Box as="section">
+      <Heading as="h3">On the web</Heading>
+         <Link href="https://github.com/michalsapka" isExternal><Icon as={AiFillGithub}/> Github</Link>
+         <Link href="https://medium.com/@msapka" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
+      </Box>
+      </VStack>
     </Layout>
   )
-}
-
-const Header = ({text}) => {
-  return(
-    <h2>{text}</h2>
-  )
-}
-
-const LinkOut = ({url, text}) => {
-  return <a href={url} target="_blank" rel="noreferrer">{text}</a>
-}
-
-const Text = ({children}) => {
-  return <div className={
-    'indent-0.5',
-    'whitespace-pre-line'
-  }>
-    {children}
-  </div>
 }
 
 export default Home

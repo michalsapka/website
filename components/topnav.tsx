@@ -58,7 +58,7 @@ function Navigation() {
 
 export default function Navbar() {
   
-  return <HStack backgroundColor="red" width="900px" maxWidth="100%">
+  return <HStack>
     <Heading>Michal </Heading>
     <Navigation/>
   </HStack>

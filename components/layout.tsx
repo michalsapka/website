@@ -1,12 +1,12 @@
 import TopNav from '../components/topnav.tsx'
-import { VStack, Box } from '@chakra-ui/react'
+import { Container, Box } from '@chakra-ui/react'
 export default function Layout({ children }) {
   return (
-    <VStack>
+    <Container maxW="2xl">
       <TopNav/>
       <Box as="main">
         {children}
       </Box>
-    </VStack>
+    </Container>
   )
 }
