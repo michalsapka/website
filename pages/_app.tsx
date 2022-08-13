@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../lib/theme.tsx'
 import type { AppProps } from 'next/app'
-
+import '@fontsource/lato/400.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
