@@ -48,7 +48,7 @@ const Home: NextPage = () => {
       <Box as="section">
       <Heading variant="section-title" as="h3">About me</Heading>
           <Text>
-  I am a self-thoght software engineer working with at <Link href="https://zendesk.com">Zendesk</Link>. Even though I&apos;ve sterted my professional programig life relatively late in life, I&apos;ve been passionate with computers since being 10 years old.  I love the process of creating software. Even though understanding the product is a requisite, I am strongly driven by the technical side. I take pride at what and how I do things. I have biggest experience working with Ruby on Rails and relative datababases, but I am expanding my knowlege around service oriented architecture, no-sql databases and other languages - currently I am trying to get a hang of Golang, MongoDB. I am also trying to get familiar with modern ReactJS ecosystem.
+            I am a self-thought software engineer working at <Link href="https://zendesk.com">Zendesk</Link>. Even though I started my professional programming life relatively late in life, I've been passionate about computers since I was ten. I love the process of creating software. Even though I consider caring about the product a requisite, the technical side strongly drives me. I take pride in what and how I do things. I have most extensive experience working with Ruby on Rails and relative databases. Still, I am expanding my knowledge around service-oriented architecture, no-SQL databases, and other languages - currently, I am trying to get the hang of Golang and MongoDB. I am also trying to get familiar with the modern ReactJS ecosystem.
         </Text>
       </Box>
       
