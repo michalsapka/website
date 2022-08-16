@@ -12,8 +12,8 @@ import {
   Icon,
   Text,
   Image as CImage,
-  Stack
-
+  Stack,
+  Button,
 } from '@chakra-ui/react'
 import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
       <Box as="section">
       <Heading variant="section-title" as="h3">About me</Heading>
           <Text>
-            I am a self-thought software engineer working at <Link href="https://zendesk.com">Zendesk</Link>. Even though I started my professional programming life relatively late in life, I've been passionate about computers since I was ten. I love the process of creating software. Even though I consider caring about the product a requisite, the technical side strongly drives me. I take pride in what and how I do things. I have most extensive experience working with Ruby on Rails and relative databases. Still, I am expanding my knowledge around service-oriented architecture, no-SQL databases, and other languages - currently, I am trying to get the hang of Golang and MongoDB. I am also trying to get familiar with the modern ReactJS ecosystem.
+            I am a self-thought software engineer working at <Link href="https://zendesk.com" isExternal>Zendesk</Link>. Even though I started my professional programming life relatively late in life, I've been passionate about computers since I was ten. I love the process of creating software. Even though I consider caring about the product a requisite, the technical side strongly drives me. I take pride in what and how I do things. I have most extensive experience working with Ruby on Rails and relative databases. Still, I am expanding my knowledge around service-oriented architecture, no-SQL databases, and other languages - currently, I am trying to get the hang of Golang and MongoDB. I am also trying to get familiar with the modern ReactJS ecosystem.
         </Text>
       </Box>
       
@@ -68,13 +68,27 @@ Non-action movies, anime and manga, classic PC games (with huge love for adventu
       <Box as="section">
       <Heading variant="section-title" as="h3">Recent publications</Heading>
       ...
+            <Stack width="100%" direction={['column', 'column', 'row', 'row']}>
+            <Box flex="1" textAlign={['left', 'left', 'center', 'center']}>
+              <Link href="https://mailchi.mp/85b0caa8a1c1/michalsapkapl" isExternal>
+                <Button>Subscribe to my newsletter</Button>
+              </Link>
+            </Box>
+            </Stack>
       </Box>
 
-      <Box as="section">
-      <Heading variant="section-title" as="h3">On the web</Heading>
-         <Link href="https://github.com/michalsapka" isExternal><Icon as={AiFillGithub}/> Github</Link>
-         <Link href="https://medium.com/@msapka" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
-      </Box>
+        <Box as="section">
+          <Heading variant="section-title" as="h3">On the web</Heading>
+          <VStack spacing="1" alignItems="start">
+            <Box>
+              <Link href="https://github.com/michalsapka" isExternal><Icon as={AiFillGithub}/> Github</Link>
+            </Box>
+            <Box>
+              <Link href="https://medium.com/@msapka" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
+            </Box>
+          </VStack>
+
+        </Box>
       </VStack>
     </Layout>
   )

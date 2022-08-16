@@ -5,7 +5,7 @@ export default function Layout({ children }) {
     <>
       <TopNav/>
       <Container maxW="lg">
-        <Box as="main">
+        <Box as="main" pt="20">
           {children}
         </Box>
       </Container>

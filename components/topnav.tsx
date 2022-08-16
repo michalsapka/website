@@ -14,6 +14,7 @@ import {
   MenuOptionGroup,
   MenuDivider,
   useMediaQuery,
+  Container
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { DiGithubBadge } from "react-icons/di"
@@ -58,10 +59,21 @@ function Navigation() {
 
 export default function Navbar() {
   
-  return <HStack>
-    <Heading>Michal </Heading>
-    <Navigation/>
-  </HStack>
+  return <Box
+    as="header"
+    position="fixed"
+    backdropFilter="auto" 
+    backdropBlur="6px"
+    width="100%"
+    pt="5px"
+  >
+    <Container maxW="xl">
+      <HStack>
+        <Heading flex={[1,1,0,0]}>Michal </Heading>
+        <Navigation/>
+      </HStack>
+    </Container>
+  </Box>
 }
 
 
