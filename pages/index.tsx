@@ -16,6 +16,7 @@ import {
   Button,
 } from '@chakra-ui/react'
 import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
+import Publications from "../data/publications"
 
 const BioEntry = ({date, description}) => {
   return <HStack spacing="6" alignItems="start">
@@ -67,7 +68,15 @@ Non-action movies, anime and manga, classic PC games (with huge love for adventu
       </Box>
       <Box as="section">
       <Heading variant="section-title" as="h3">Recent publications</Heading>
-      ...
+          <VStack spacing="1" alignItems="start">
+            {Publications.map((value, key) => {
+              return <Box>
+                       <Link href={value.url} isExternal>{value.name}</Link>
+                     </Box>
+
+            })}
+          </VStack>
+            
             <Stack width="100%" direction={['column', 'column', 'row', 'row']}>
             <Box flex="1" textAlign={['left', 'left', 'center', 'center']}>
               <Link href="https://mailchi.mp/85b0caa8a1c1/michalsapkapl" isExternal>

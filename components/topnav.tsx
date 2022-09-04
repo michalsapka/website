@@ -31,7 +31,6 @@ function MobileNav() {
       Action
     </MenuButton>
     <MenuList>
-      <MenuItem>Publications</MenuItem>
       <MenuItem icon={<DiGithubBadge/>}>View source</MenuItem>
     </MenuList>
   </Menu>
@@ -40,7 +39,6 @@ function MobileNav() {
 function DesktopNav() {
   return <HStack>
     <Box>
-      <Link>Publications</Link>
     </Box>
     <Box>
       <Link href="https://github.com/michalsapka/michal-sapka-pl">Source code</Link>
