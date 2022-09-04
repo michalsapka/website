@@ -1,4 +1,4 @@
-import TopNav from '../components/topnav.tsx'
+import TopNav from '../components/topnav'
 import { Container, Box } from '@chakra-ui/react'
 export default function Layout({ children }) {
   return (

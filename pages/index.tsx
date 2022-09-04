@@ -49,7 +49,7 @@ const Home: NextPage = () => {
       <Box as="section">
       <Heading variant="section-title" as="h3">About me</Heading>
           <Text>
-            I am a self-thought software engineer working at <Link href="https://zendesk.com" isExternal>Zendesk</Link>. Even though I started my professional programming life relatively late in life, I've been passionate about computers since I was ten. I love the process of creating software. Even though I consider caring about the product a requisite, the technical side strongly drives me. I take pride in what and how I do things. I have most extensive experience working with Ruby on Rails and relative databases. Still, I am expanding my knowledge around service-oriented architecture, no-SQL databases, and other languages - currently, I am trying to get the hang of Golang and MongoDB. I am also trying to get familiar with the modern ReactJS ecosystem.
+            I am a self-thought software engineer working at <Link href="https://zendesk.com" isExternal>Zendesk</Link>. Even though I started my professional programming life relatively late in life, I&apos;ve been passionate about computers since I was ten. I love the process of creating software. Even though I consider caring about the product a requisite, the technical side strongly drives me. I take pride in what and how I do things. I have most extensive experience working with Ruby on Rails and relative databases. Still, I am expanding my knowledge around service-oriented architecture, no-SQL databases, and other languages - currently, I am trying to get the hang of Golang and MongoDB. I am also trying to get familiar with the modern ReactJS ecosystem.
         </Text>
       </Box>
       
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
       <Heading variant="section-title" as="h3">Recent publications</Heading>
           <VStack spacing="1" alignItems="start">
             {Publications.map((value, key) => {
-              return <Box>
+              return <Box key={key}>
                        <Link href={value.url} isExternal>{value.name}</Link>
                      </Box>
 
