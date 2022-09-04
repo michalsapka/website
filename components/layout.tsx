@@ -1,6 +1,12 @@
 import TopNav from '../components/topnav'
 import { Container, Box } from '@chakra-ui/react'
-export default function Layout({ children }) {
+import ReactNode from 'react'
+
+type Props = {
+    children?: any
+}
+
+export default function Layout({ children } : Props) {
   return (
     <>
       <TopNav/>

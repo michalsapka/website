@@ -1,4 +1,4 @@
-type Publications = {
+type Publication = {
   name: string,
   url: string,
 }

@@ -19,7 +19,12 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi"
 import { DiGithubBadge } from "react-icons/di"
 
-function NavLink({to, children}) {
+type NavLinkType = {
+  to: string,
+  children: any,
+}
+
+function NavLink({to, children} : NavLinkType) {
     return <a href={to} className={`mx-4`}>
         {children}
     </a>

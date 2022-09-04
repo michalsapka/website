@@ -1,5 +1,5 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import theme from '../lib/theme.tsx'
+import theme from '../lib/theme'
 import type { AppProps } from 'next/app'
 import '@fontsource/lato/400.css'
 

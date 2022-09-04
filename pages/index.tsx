@@ -18,7 +18,12 @@ import {
 import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 import Publications from "../data/publications"
 
-const BioEntry = ({date, description}) => {
+type BioEntryType = {
+  date: string,
+  description: string
+}
+
+const BioEntry = ({date, description} : BioEntryType) => {
   return <HStack spacing="6" alignItems="start">
       <Box fontWeight='bolder'>{date}</Box>
       <Box>{description}</Box>
