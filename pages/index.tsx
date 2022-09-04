@@ -60,13 +60,8 @@ const Home: NextPage = () => {
           <BioEntry date="2016" description="Joined Zendesk"/>
 
       </Box>
-      <Box as="section">
-      <Heading variant="section-title" as="h3">I enjoy</Heading>
-        <Text>
-Non-action movies, anime and manga, classic PC games (with huge love for adventure ganre), literature, jazz.
-        </Text>
-      </Box>
-      <Box as="section">
+
+     <Box as="section">
       <Heading variant="section-title" as="h3">Recent publications</Heading>
           <VStack spacing="1" alignItems="start">
             {Publications.map((value, key) => {
