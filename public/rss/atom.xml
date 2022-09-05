@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://michal.sapka.pl</id>
+    <title>Michał's publications</title>
+    <updated>2022-09-05T20:50:45.878Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>Michał M. Sapka</name>
+        <email>michal@sapka.pl</email>
+        <uri>https://michal.sapka.pl</uri>
+    </author>
+    <link rel="alternate" href="https://michal.sapka.pl"/>
+    <link rel="self" href="https://michal.sapka.pl/rss/atom.xml"/>
+    <subtitle>Michał Sapka's recent publications</subtitle>
+    <rights>All rights reserved 2022, Michał M. Sapka</rights>
+    <entry>
+        <title type="html"><![CDATA[Buffers, splits and tabs in Vim]]></title>
+        <id>https://medium.com/@msapka/buffers-splits-and-tabs-in-vim-5bb3b6dc1c19</id>
+        <link href="https://medium.com/@msapka/buffers-splits-and-tabs-in-vim-5bb3b6dc1c19"/>
+        <updated>2022-08-17T22:00:00.000Z</updated>
+        <author>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </author>
+        <contributor>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A month with a disgusting ThinkPad]]></title>
+        <id>https://medium.com/@msapka/a-month-with-a-disgusting-thinkpad-936e7c675a74</id>
+        <link href="https://medium.com/@msapka/a-month-with-a-disgusting-thinkpad-936e7c675a74"/>
+        <updated>2022-08-07T22:00:00.000Z</updated>
+        <author>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </author>
+        <contributor>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Managing dotfiles with GNU Stow]]></title>
+        <id>https://medium.com/@msapka/managing-dotfiles-with-gnu-stow-72b4e3bb9434</id>
+        <link href="https://medium.com/@msapka/managing-dotfiles-with-gnu-stow-72b4e3bb9434"/>
+        <updated>2022-08-04T22:00:00.000Z</updated>
+        <author>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </author>
+        <contributor>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding dynamic DNS to my home server]]></title>
+        <id>https://medium.com/@msapka/adding-dynamic-dns-to-my-home-server-d05bf65358cc</id>
+        <link href="https://medium.com/@msapka/adding-dynamic-dns-to-my-home-server-d05bf65358cc"/>
+        <updated>2022-08-03T22:00:00.000Z</updated>
+        <author>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </author>
+        <contributor>
+            <name>Michał M. Sapka</name>
+            <email>michal@sapka.pl</email>
+            <uri>https://michal.sapka.pl</uri>
+        </contributor>
+    </entry>
+</feed>

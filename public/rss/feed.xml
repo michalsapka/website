@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Michał's publications</title>
+        <link>https://michal.sapka.pl</link>
+        <description>Michał Sapka's recent publications</description>
+        <lastBuildDate>Mon, 05 Sep 2022 20:50:45 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Feed for Node.js</generator>
+        <copyright>All rights reserved 2022, Michał M. Sapka</copyright>
+        <item>
+            <title><![CDATA[Buffers, splits and tabs in Vim]]></title>
+            <link>https://medium.com/@msapka/buffers-splits-and-tabs-in-vim-5bb3b6dc1c19</link>
+            <guid>https://medium.com/@msapka/buffers-splits-and-tabs-in-vim-5bb3b6dc1c19</guid>
+            <pubDate>Wed, 17 Aug 2022 22:00:00 GMT</pubDate>
+            <author>michal@sapka.pl (Michał M. Sapka)</author>
+        </item>
+        <item>
+            <title><![CDATA[A month with a disgusting ThinkPad]]></title>
+            <link>https://medium.com/@msapka/a-month-with-a-disgusting-thinkpad-936e7c675a74</link>
+            <guid>https://medium.com/@msapka/a-month-with-a-disgusting-thinkpad-936e7c675a74</guid>
+            <pubDate>Sun, 07 Aug 2022 22:00:00 GMT</pubDate>
+            <author>michal@sapka.pl (Michał M. Sapka)</author>
+        </item>
+        <item>
+            <title><![CDATA[Managing dotfiles with GNU Stow]]></title>
+            <link>https://medium.com/@msapka/managing-dotfiles-with-gnu-stow-72b4e3bb9434</link>
+            <guid>https://medium.com/@msapka/managing-dotfiles-with-gnu-stow-72b4e3bb9434</guid>
+            <pubDate>Thu, 04 Aug 2022 22:00:00 GMT</pubDate>
+            <author>michal@sapka.pl (Michał M. Sapka)</author>
+        </item>
+        <item>
+            <title><![CDATA[Adding dynamic DNS to my home server]]></title>
+            <link>https://medium.com/@msapka/adding-dynamic-dns-to-my-home-server-d05bf65358cc</link>
+            <guid>https://medium.com/@msapka/adding-dynamic-dns-to-my-home-server-d05bf65358cc</guid>
+            <pubDate>Wed, 03 Aug 2022 22:00:00 GMT</pubDate>
+            <author>michal@sapka.pl (Michał M. Sapka)</author>
+        </item>
+    </channel>
+</rss>

@@ -1,8 +1,5 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import Layout from '../components/layout'
-import styles from '../styles/Home.module.css'
 import { 
   VStack, 
   HStack,
@@ -17,6 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 import Publications from "../data/publications"
+import generateRssFeed from "../lib/feed"
 
 type BioEntryType = {
   date: string,
@@ -71,7 +69,7 @@ const Home: NextPage = () => {
           <VStack spacing="1" alignItems="start">
             {Publications.map((value, key) => {
               return <Box key={key}>
-                       <Link href={value.url} isExternal>{value.name}</Link>
+                       <Link href={value.url} isExternal>{value.title}</Link>
                      </Box>
 
             })}
@@ -102,5 +100,10 @@ const Home: NextPage = () => {
     </Layout>
   )
 }
+
+export const getStaticProps = async (context : any) => {
+  await generateRssFeed();
+  return { props: {} };
+};
 
 export default Home
