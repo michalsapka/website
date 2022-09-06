@@ -70,7 +70,11 @@ export default function Navbar() {
     width="100%"
     pt="5px"
   >
-    <Container maxW="xl">
+    <Container 
+      maxW="xl"
+      mt="0"
+      mb="1"
+    >
       <HStack>
         <Heading flex={[1,1,0,0]}>Michal </Heading>
         <Navigation/>

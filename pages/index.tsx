@@ -12,8 +12,10 @@ import {
   Stack,
   Button,
 } from '@chakra-ui/react'
+import Head from 'next/head'
 import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 import Publications from "../data/publications"
+import { NextSeo } from 'next-seo'
 import generateRssFeed from "../lib/feed"
 
 type BioEntryType = {
@@ -31,12 +33,16 @@ const BioEntry = ({date, description} : BioEntryType) => {
 const Home: NextPage = () => {
   return (
     <Layout>
+      <NextSeo
+        title="Michał Sapka - Homepage"
+        description="Hello and welcome to my homepage"
+        />
       <VStack spacing="24px"align="stretch">
         <Box as="section">
           <Stack width="100%" direction={["column", "column", "row"]}>
             <Box flex="1">
-              <Heading variant="main-title">Michal Sapka</Heading>
-              <Text variant="main-title">Self-though senior software engineer from Poland.</Text>
+              <Heading variant="main-title">Michał Sapka</Heading>
+              <Text variant="main-title">Self-though Senior Software Engineer working at Zendesk.</Text>
             </Box>
             <Box textAlign="center">
               <CImage
@@ -52,7 +58,7 @@ const Home: NextPage = () => {
       <Box as="section">
       <Heading variant="section-title" as="h3">About me</Heading>
           <Text>
-            I am a self-thought software engineer working at <Link href="https://zendesk.com" isExternal>Zendesk</Link>. Even though I started my professional programming life relatively late in life, I&apos;ve been passionate about computers since I was ten. I love the process of creating software. Even though I consider caring about the product a requisite, the technical side strongly drives me. I take pride in what and how I do things. I have most extensive experience working with Ruby on Rails and relative databases. Still, I am expanding my knowledge around service-oriented architecture, no-SQL databases, and other languages - currently, I am trying to get the hang of Golang and MongoDB. I am also trying to get familiar with the modern ReactJS ecosystem.
+            Michał is a self-thought software engineer working at <Link href="https://zendesk.com" isExternal>Zendesk</Link>. Even though he has started his professional programming life relatively late in life, he has been passionate about computers since he was ten. He loves the process of creating software. Even though he consider caring about the product a requisite, the technical side strongly drives him. He takes pride in what and how he do things. He has most extensive experience working with Ruby on Rails and relative databases. Still, he is expanding my knowledge around service-oriented architecture, no-SQL databases, and other languages - currently, he is trying to get the hang of Golang and MongoDB. He is also trying to get familiar with the modern ReactJS ecosystem.
         </Text>
       </Box>
       
@@ -76,7 +82,7 @@ const Home: NextPage = () => {
           </VStack>
             
             <Stack width="100%" direction={['column', 'column', 'row', 'row']}>
-            <Box flex="1" textAlign={['left', 'left', 'center', 'center']}>
+            <Box flex="1" mt="2" mb="2" textAlign={['left', 'left', 'center', 'center']}>
               <Link href="https://mailchi.mp/85b0caa8a1c1/michalsapkapl" isExternal>
                 <Button>Subscribe to my newsletter</Button>
               </Link>
