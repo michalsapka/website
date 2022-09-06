@@ -11,6 +11,7 @@ import {
   Image as CImage,
   Stack,
   Button,
+  useColorModeValue
 } from '@chakra-ui/react'
 import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 import Publications from "../data/publications"
@@ -49,6 +50,9 @@ const Home: NextPage = () => {
                 src="images/michal.png"
                 width="80px"
                 borderRadius="full"
+                borderWidth = "3px"
+                borderStyle = "solid"
+                borderColor = {useColorModeValue("#FFFFFF", "#6272a4")}
                 />
             </Box>
           </Stack>
