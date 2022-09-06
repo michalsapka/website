@@ -4,10 +4,10 @@ import { mode } from '@chakra-ui/theme-tools'
 type propsType = any
 
 const styles = {
-  global: (_props : propsType) => {
+  global: (props : propsType) => {
     body: {
-      //bg: mode('#d5d6db', '#24283b')(props),
-      //color: mode('#0f4b6e', '#7dcfff')(props),
+      bg: mode('#d5d6db', '#24283b')(props);
+      color: mode('#0f4b6e', '#7dcfff')(props);
     }
   }
 }

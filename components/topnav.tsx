@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { 
   Link,
   Box, 
@@ -9,29 +8,16 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
   useMediaQuery,
   Container
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { DiGithubBadge } from "react-icons/di"
-
-type NavLinkType = {
-  to: string,
-  children: any,
-}
-
-function NavLink({to, children} : NavLinkType) {
-    return <a href={to} className={`mx-4`}>
-        {children}
-    </a>
-}
+import ThemeToggleButton from "../components/toggle_theme_button"
 
 function MobileNav() {
-  return <Menu>
+  return <>
+  <Menu>
     <MenuButton as={IconButton} icon={<GiHamburgerMenu/>}>
       Action
     </MenuButton>
@@ -39,29 +25,20 @@ function MobileNav() {
       <MenuItem icon={<DiGithubBadge/>}>View source</MenuItem>
     </MenuList>
   </Menu>
+  </>
 }
 
 function DesktopNav() {
   return <HStack>
-    <Box>
-    </Box>
-    <Box>
+    <Box flex="1">
       <Link href="https://github.com/michalsapka/michal-sapka-pl">Source code</Link>
     </Box>
   </HStack>
 }
 
-function Navigation() {
-   const [isMobile] = useMediaQuery("(max-width: 768px)")
-
-  let navigationComponent = isMobile ? MobileNav : DesktopNav
-
-  
-  return <HStack as="nav">{navigationComponent()}</HStack>
-}
 
 export default function Navbar() {
-  
+ const [isMobile] = useMediaQuery("(max-width: 768px)")
   return <Box
     as="header"
     position="fixed"
@@ -76,8 +53,12 @@ export default function Navbar() {
       mb="1"
     >
       <HStack>
-        <Heading flex={[1,1,0,0]}>Michal </Heading>
-        <Navigation/>
+        <Heading flex="0">Michal </Heading>
+        <Box flex="1">
+          {isMobile ? null : <DesktopNav/>}
+        </Box>
+        <ThemeToggleButton/>
+        {isMobile ? <MobileNav/> : null}
       </HStack>
     </Container>
   </Box>
