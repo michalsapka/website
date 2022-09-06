@@ -12,7 +12,6 @@ import {
   Stack,
   Button,
 } from '@chakra-ui/react'
-import Head from 'next/head'
 import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 import Publications from "../data/publications"
 import { NextSeo } from 'next-seo'
