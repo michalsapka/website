@@ -22,6 +22,10 @@ const components = {
       'topnav-link': (props : StyleFunctionProps) => ({
         color: mode('#282a36', '#f8f8f2')(props),
         textDecoration: "none"
+      }),
+      'list-link': (props : StyleFunctionProps) => ({
+        color: mode('#282a36', '#f8f8f2')(props),
+        textDecoration: "none"
       })
     }
   },

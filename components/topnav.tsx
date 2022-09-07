@@ -9,8 +9,9 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
+  Container,
   useMediaQuery,
-  Container
+  useColorModeValue
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { DiGithubBadge } from "react-icons/di"
@@ -45,6 +46,7 @@ export default function Navbar() {
     position="fixed"
     backdropFilter="auto" 
     backdropBlur="6px"
+    backdropBrightness={useColorModeValue("1.1", "1")}
     width="100%"
     pt="5px"
   >

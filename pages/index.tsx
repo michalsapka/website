@@ -97,10 +97,10 @@ const Home: NextPage = () => {
           <Heading variant="section-title" as="h3">On the web</Heading>
           <VStack spacing="1" alignItems="start">
             <Box>
-              <Link href="https://github.com/michalsapka" isExternal><Icon as={AiFillGithub}/> Github</Link>
+              <Link variant="list-link" href="https://github.com/michalsapka" isExternal><Icon as={AiFillGithub}/> Github</Link>
             </Box>
             <Box>
-              <Link href="https://medium.com/@msapka" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
+              <Link variant="list-link" href="https://medium.com/@msapka" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
             </Box>
           </VStack>
 
