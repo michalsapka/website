@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                 borderRadius="full"
                 borderWidth = "3px"
                 borderStyle = "solid"
-                borderColor = {useColorModeValue("#FFFFFF", "#6272a4")}
+                borderColor = {useColorModeValue("#eee8d5", "#6272a4")}
                 />
             </Box>
           </Stack>

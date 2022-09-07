@@ -2,6 +2,7 @@ import {
   Link,
   Box, 
   HStack, 
+  Icon,
   IconButton,
   Menu,
   Heading,
@@ -31,7 +32,7 @@ function MobileNav() {
 function DesktopNav() {
   return <HStack>
     <Box flex="1">
-      <Link href="https://github.com/michalsapka/michal-sapka-pl">Source code</Link>
+      <Link variant="topnav-link" href="https://github.com/michalsapka/michal-sapka-pl"> <Icon as={DiGithubBadge}/> Source code</Link>
     </Box>
   </HStack>
 }
@@ -53,7 +54,7 @@ export default function Navbar() {
       mb="1"
     >
       <HStack>
-        <Heading flex="0">Michal </Heading>
+        <Heading flex="0" mr="20px">Michal </Heading>
         <Box flex="1">
           {isMobile ? null : <DesktopNav/>}
         </Box>
