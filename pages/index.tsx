@@ -48,7 +48,7 @@ const Home: NextPage = () => {
               <CImage
                 display="inline-block"
                 src="images/michal.png"
-                width="80px"
+                width="120px"
                 borderRadius="full"
                 borderWidth = "3px"
                 borderStyle = "solid"
