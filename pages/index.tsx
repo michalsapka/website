@@ -42,7 +42,7 @@ const Home: NextPage = () => {
           <Stack width="100%" direction={["column", "column", "row"]}>
             <Box flex="1">
               <Heading variant="main-title">Michał Sapka</Heading>
-              <Text variant="main-title">Self-though Senior Software Engineer working at Zendesk.</Text>
+              <Text variant="main-title">Senior Software Engineer working at Zendesk.</Text>
             </Box>
             <Box textAlign="center">
               <CImage
