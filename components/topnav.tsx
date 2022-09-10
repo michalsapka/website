@@ -9,13 +9,16 @@ import {
   MenuList,
   MenuItem,
   Container,
-  Image,
   useMediaQuery,
   useColorModeValue
 } from '@chakra-ui/react'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { DiGithubBadge } from "react-icons/di"
 import ThemeToggleButton from "../components/toggle_theme_button"
+import Image from "../lib/next_image"
+
+import LogoLight from "../public/images/logo_light.png"
+import LogoDark from "../public/images/logo_dark.png"
 
 function MobileNav() {
   return <>
@@ -56,10 +59,12 @@ export default function Navbar() {
       mb="1"
     >
       <HStack>
-        <Box minW="189px" h={["22px", "22px", "30px", "30px"]} flex="0" >
+        <Box minW="170px" h={["22px", "22px", "30px", "30px"]} flex="0" >
           <Image 
-            h="24px" 
-            src={useColorModeValue("images/logo_light.png", "images/logo_dark.png")}
+            height="24px" 
+            width="165px"
+            quality="100"
+            src={useColorModeValue(LogoLight, LogoDark)}
             />
         </Box>
         <Box flex="1">
