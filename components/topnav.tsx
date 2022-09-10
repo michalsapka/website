@@ -5,11 +5,11 @@ import {
   Icon,
   IconButton,
   Menu,
-  Heading,
   MenuButton,
   MenuList,
   MenuItem,
   Container,
+  Image,
   useMediaQuery,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -56,7 +56,12 @@ export default function Navbar() {
       mb="1"
     >
       <HStack>
-        <Heading flex="0" mr="20px">Michal </Heading>
+        <Box minW="189px" h={["22px", "22px", "30px", "30px"]} flex="0" >
+          <Image 
+            h="24px" 
+            src={useColorModeValue("images/logo_light.png", "images/logo_dark.png")}
+            />
+        </Box>
         <Box flex="1">
           {isMobile ? null : <DesktopNav/>}
         </Box>
