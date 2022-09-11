@@ -1,5 +1,5 @@
 # Michal's homepage
-https://michal.sapka.pl
+https://sapka.pl
 
 This is code of for my homepage.
 

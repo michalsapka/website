@@ -6,14 +6,14 @@
     <description>Recent content on Michał&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Mar 2022 23:29:00 +0200</lastBuildDate><atom:link href="https://michal.sapka.pl/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Mar 2022 23:29:00 +0200</lastBuildDate><atom:link href="https://www.sapka.me" rel="self" type="application/rss+xml" />
     <item>
       <title>RSS feed moved</title>
-      <link>https://michal.sapka.pl/</link>
+      <link>https://www.sapka.com/</link>
       <pubDate>Mon, 02 Sept 2022 21:10:00 +0200</pubDate>
       
-      <guid>https://michal.sapka.pl</guid>
-      <description>The RSS feed has moved. Please go to https://michal.sapka.pl and update the bookmark</description>
+      <guid>https://www.sapka.me</guid>
+      <description>The RSS feed has moved. Please go to https://www.sapka.me and update the bookmark</description>
     </item>
   </channel>
 </rss>

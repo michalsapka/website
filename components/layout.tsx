@@ -14,7 +14,7 @@ export default function Layout({ children } : Props) {
           openGraph={{
             type: 'website',
             locale: 'en_US',
-            url: 'https://michal.sapka.me/',
+            url: 'https://www.sapka.me/',
             site_name: 'Michał Sapka'
           }}
           twitter={{

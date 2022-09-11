@@ -98,7 +98,7 @@ const Home: NextPage = () => {
                 <Button>Subscribe to my newsletter</Button>
               </Link>
               <Box opacity="0.5">
-              <Link href="https://michal.sapka.me/rss/feed.xml">
+              <Link href="https://www.sapka.me/rss/feed.xml">
                 or subscribe via RSS
               </Link>
               </Box>

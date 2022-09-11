@@ -3,7 +3,7 @@ import { Feed } from "feed";
 import Publications from "../data/publications";
 
 const generateRssFeed = async () => {
-  const siteURL = "https://michal.sapka.pl";
+  const siteURL = "https://www.sapka.me";
   const date = new Date();
   const author = {
     name: "Michał M. Sapka",
