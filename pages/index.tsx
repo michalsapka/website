@@ -8,7 +8,6 @@ import {
   Link, 
   Icon,
   Text,
-  Image as CImage,
   Stack,
   Button,
   useColorModeValue
@@ -17,6 +16,9 @@ import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
 import Publications from "../data/publications"
 import { NextSeo } from 'next-seo'
 import generateRssFeed from "../lib/feed"
+import Image from "../lib/next_image"
+
+import MichalPhoto from "../public/images/michal.png"
 
 type BioEntryType = {
   date: string,
@@ -45,10 +47,11 @@ const Home: NextPage = () => {
               <Text variant="main-title">Senior Software Engineer working at Zendesk.</Text>
             </Box>
             <Box textAlign="center">
-              <CImage
+              <Image
                 display="inline-block"
-                src="images/michal.png"
+                src={MichalPhoto}
                 width="120px"
+                height="120px"
                 borderRadius="full"
                 borderWidth = "3px"
                 borderStyle = "solid"
