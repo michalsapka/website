@@ -12,7 +12,12 @@ import {
   Button,
   useColorModeValue
 } from '@chakra-ui/react'
-import { AiFillGithub,AiFillMediumCircle} from "react-icons/ai";
+import { 
+  AiFillGithub,
+  AiFillMediumCircle, 
+  AiFillTwitterCircle,
+  AiOutlineLinkedin
+} from "react-icons/ai";
 import Publications from "../data/publications"
 import { NextSeo } from 'next-seo'
 import generateRssFeed from "../lib/feed"
@@ -111,7 +116,9 @@ const Home: NextPage = () => {
               <Link variant="list-link" href="https://medium.com/@msapka" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
             </Box>
           </VStack>
-
+            <Box>
+              <Link variant="list-link" href="https://twitter.com/michalsapka" isExternal><Icon as={AiFillTwitterCircle}/> Twitter</Link>
+            </Box>
         </Box>
       </VStack>
     </Layout>
