@@ -92,6 +92,11 @@ const Home: NextPage = () => {
               <Link href="https://mailchi.mp/85b0caa8a1c1/michalsapkapl" isExternal>
                 <Button>Subscribe to my newsletter</Button>
               </Link>
+              <Box opacity="0.5">
+              <Link href="https://michal.sapka.me/rss/feed.xml">
+                or subscribe via RSS
+              </Link>
+              </Box>
             </Box>
             </Stack>
       </Box>
