@@ -113,7 +113,7 @@ const Home: NextPage = () => {
               <Link variant="list-link" href="https://github.com/michalsapka" isExternal><Icon as={AiFillGithub}/> Github</Link>
             </Box>
             <Box>
-              <Link variant="list-link" href="https://medium.com/@msapka" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
+              <Link variant="list-link" href="https://blog.sapka.me" isExternal><Icon as={AiFillMediumCircle}/> Medium</Link>
             </Box>
           </VStack>
             <Box>
