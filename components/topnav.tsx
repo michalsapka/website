@@ -52,6 +52,7 @@ export default function Navbar() {
     backdropBrightness={useColorModeValue("1.1", "1")}
     width="100%"
     pt="5px"
+    zIndex="9000"
   >
     <Container 
       maxW="xl"
