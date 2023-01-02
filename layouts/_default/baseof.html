@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<HTML lang="en">
+  <HEAD>
+    <META charset="utf-8">
+    <TITLE>{{ block "title" . }}
+      {{ .Site.Title }}
+      {{ end }}</TITLE>
+    <link rel='stylesheet' type='text/css' href='/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{- $image := resources.Get "/icons/apple-touch-icon.png"}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ $image.Permalink }}">
+    {{- $image := resources.Get "/icons/favicon-32x32.png" }}
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ $image.Permalink }}">
+    {{- $image := resources.Get "/icons/favicon-16x16.png" }}
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ $image.Permalink }}">
+
+    <meta property="og:title" content="{{ .Page.Title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Page.Permalink }}" />
+    {{- $imageUrl := default "logo.png" .Params.image }}
+    {{- $image := resources.Get $imageUrl }}
+    <meta property="og:image" content="{{ $image.Permalink }}" />
+
+    <meta name="twitter:title" content="{{ .Page.Title }}">
+    <meta name="twitter:image" content="{{ $image.Permalink }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="{{ .Site.BaseURL }}">
+    <link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
+    <meta name="robots" content="index, follow">
+    {{ if isset .Params "tags" }}<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">{{end}}
+  </HEAD>
+  <BODY>
+    {{ block "header" . }}
+    <HEADER>
+      {{ $image := resources.Get "logo.png" }}
+      {{ $image := $image.Resize "x45" }}
+      <a href="/">
+      <img alt="logo" src="{{ $image.Permalink }}" width={{$image.Width}} height={{$image.Height}}/>
+        <div>
+          <h1>{{ .Site.Title }}</h1>
+          (because giphy sucks)
+        </div>
+      </a>
+    </HEADER>
+    {{ end }}
+    <MAIN>
+    {{ block "page-title" . }}
+      <h2> {{ .Page.Title }}</h2>
+    {{ end }}
+    {{ block "main" . }}
+    {{ end }}
+    </MAIN>
+
+    {{ block "FOOTER" . }}
+    <FOOTER>
+    <ASIDE>
+      <BR>
+      Terms and conditions
+      <OL>
+        <li> I don't care who you are so I won't track you.
+        <li> I have stolen all those memes so I have no rights to them.
+        <li> You will not kill my server.
+      </OL>
+    </ASIDE>
+    <div>
+      Created by <a href="https://sapka.me" target="_blank">Michal</a>
+      <BR>
+      <BR>
+      <a href="/index.xml">
+        {{ $image := resources.Get "rss.png" }}
+        {{ $image := $image.Resize "x25" }}
+        <img alt="rss" src="{{ $image.Permalink }}" width={{$image.Width}} height={{$image.Height}}/>
+      </a>
+    </div>
+
+    </FOOTER>
+    {{ end }}
+  </BODY>
+</HTML>

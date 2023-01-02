@@ -1,0 +1,33 @@
+{{ define "title" }}
+{{ end }}
+
+{{ define "main" }}
+{{ $imageUrl := .Params.image }}
+{{ $image := resources.Get $imageUrl }}
+{{ $image := $image.Resize "790x" }}
+<img alt="{{ .Params.title }}" src="{{ $image.Permalink }}" width={{ $image.Width }} height={{ $image.Height }}/><BR/>
+<hr/>
+added on {{ .PublishDate.Format "January 2, 2006" }} 
+{{- if isset .Params "tags" -}}
+  {{- $tagsLen := len .Params.tags -}}
+  {{- if gt $tagsLen 0 -}}
+    &nbsp;with tags:  
+    {{- range $k, $v := .Params.tags -}}
+      {{- $url := printf "tags/%s" (. | urlize | lower) -}}
+      <a href="{{ $url | absURL }}"> {{ . | title }}</a>
+      {{- if lt $k (sub $tagsLen 1) }} &middot; {{ end -}}
+    {{- end -}}
+    </div>
+  {{- end -}}
+{{- end }}
+<hr/>
+
+{{ if or .Next .Prev -}}
+<div>
+  {{- with .Prev }} <a class="prev-link" href="{{ .RelPermalink}}"> &#8592; Previous</a> {{ end -}}
+  {{- with .Next -}}<a class="next-link" href="{{ .RelPermalink}}">Next &#8594;</a> {{ end -}}
+</div>
+{{ end -}}
+
+{{ end }}
+
