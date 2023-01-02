@@ -1,0 +1,5 @@
+{{- range where .Pages "Params.category" "meme"}}
+    {{- $imageUrl := .Param "image" }}
+    {{- $image := resources.Get $imageUrl }}
+    {{- $image.Permalink }}
+{{ end }}
