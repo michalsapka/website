@@ -1,12 +1,5 @@
-baseURL = 'https://memes.sapka.me'
+baseURL = 'https://michal.sapka.me'
 languageCode = 'en-us'
-title = "Michal's based meme collection"
+title = "Michal's website"
 
-[outputFormats.TXT]
-mediaType = "text/plain"
-sufix = "txt"
-isPlainText = true
-
-[outputs]
-    home                   = [ "HTML", "RSS", "TXT" ]
 

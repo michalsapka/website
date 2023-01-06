@@ -1,12 +1,6 @@
 {{ define "main" }}
   {{ range where .Pages "Params.category" "meme"}}
     <article class="list">
-      <a href="{{ .RelPermalink }}">
-      {{ $imageUrl := .Param "image" }}
-      {{ $image := resources.Get $imageUrl }}
-      {{ $image := $image.Resize "350x" }}
-      <img alt="{{ .Param "title"}}" src="{{ $image.Permalink }}" width={{ $image.Width }} height={{ $image.Height }}/>
-      </a>
     </article>
   {{ end }}
 {{ end }}
